@@ -1,2 +1,3 @@
-# cv
-Hoja de Vida
+# CV de Leonardo Rothe Tagliafico
+
+Disponible en (por definir)

@@ -1,0 +1,235 @@
+@import (css) url('https://fonts.googleapis.com/css?family=Lato:400,400i,700|Patua+One');
+
+* { font-size: inherit; margin: 0; }
+
+html {
+	padding: 10px;
+}
+
+a {
+	color: #0000ff;
+}
+
+abbr {
+	text-decoration: none;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 800px;
+	font: normal 12pt "Lato", sans-serif;
+	line-height: 3ex;
+}
+
+h1, h2 {
+	line-height: 2ex;
+	font-family: "Patua One", sans-serif;
+	font-weight: normal;
+}
+
+ul {
+	li + li {
+		margin-top: 1ex;
+	}
+}
+
+body {
+
+	> header {
+		margin-bottom: 30px;
+
+		hgroup {
+			margin-bottom: 10px;
+
+			h1 {
+				font-size: 250%;
+			}
+
+			h2 {
+				margin-top: 10px;
+				font-size: 200%;
+			}
+		}
+
+		dl {
+
+			dt {
+				display: none;
+			}
+		}
+	}
+
+	> section {
+
+		> h1 {
+			font-size: 200%;
+			margin-bottom: 30px;
+		}
+
+		> h2 {
+			font-size: 150%;
+			margin: 20px 0;
+		}
+
+		> h3 {
+			margin: 10px 0;
+		}
+
+		> .abstract {
+			padding-left: 40px;
+			margin: 20px 0;
+			color: #444;
+			font-style: italic;
+		}
+
+		article {
+
+			header {
+				margin-bottom: 10px;
+			}
+
+			h1 {
+				font-size: 160%;
+				margin-bottom: 5px;
+
+				.annotation {
+					color: #888;
+
+					&:before {
+						content: " -";
+					}
+				}
+			}
+
+			h2 {
+				font-size: 120%;
+				margin-bottom: 5px;
+			}
+
+			section {
+
+				h1 {
+					font-size: 120%;
+					margin-bottom: 1ex;
+				}
+			}
+
+			section + section {
+				margin-top: 20px;
+			}
+		}
+
+		article + article {
+			margin-top: 40px;
+		}
+	}
+
+	> section + section {
+		margin-top: 50px;
+	}
+}
+
+#index {
+	display: none;
+	line-height: normal;
+	color: #444;
+	font-size: 10pt;
+
+	h1 {
+		margin: 0 0 10px;
+		font-size: 110%;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+#experience {
+
+	.job {
+
+		header {
+			break-inside: avoid-page;
+		}
+
+		.abstract {
+			font-style: italic;
+			padding-left: 40px;
+			color: #444;
+		}
+	}
+}
+
+#education {
+	break-inside: avoid-page;
+}
+
+#references {
+	break-inside: avoid-page;
+
+	.vcard + .vcard {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	html {
+		padding: 20px;
+	}
+	body {
+		font-size: 9pt;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	html {
+		padding: 40px;
+	}
+	body {
+		font-size: 10pt;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	body {
+		max-width: 800px;
+		margin: 0 auto;
+		font-size: 12pt;
+	}
+	#index {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 950px) and (max-width: 1450px) {
+	html {
+		padding: 50px 350px 50px 50px;
+	}
+}
+
+@media screen and (min-width: 1450px) {
+	html {
+		padding: 50px;
+	}
+}
+
+@media screen and (min-width: 950px) {
+	#index {
+			position: fixed;
+			top: 0;
+			right: 0;
+			width: 250px;
+			margin: 50px;
+	}
+}
+
+@media print {
+	body {
+		font-size: 10pt;
+	}
+	#index {
+		display: none;
+	}
+}
